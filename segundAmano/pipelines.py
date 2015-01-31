@@ -13,7 +13,7 @@ class SegundAmanoPipeline(object):
 
 	def getFloat(self, floatStr):
 
-		floatStr = re.sub("[^0123456789\.-]", '', floatStr)
+		floatStr = re.sub("[^0123456789\.]", '', floatStr)
 
 		if floatStr:
 			return float(floatStr)		
