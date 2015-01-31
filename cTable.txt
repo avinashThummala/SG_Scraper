@@ -1,0 +1,35 @@
+create table segundAmano
+(
+
+	SG_Poster_CLO TEXT,
+	SG_Tipo_de_inmueble_CLO TEXT,
+
+	SG_Superficie_FLO FLOAT,
+	SG_Habitaciones_CLO TEXT,
+
+	SG_Titulo_TXT TEXT,
+	SG_Descripcion_del_anuncio_TXT TEXT,
+
+	SG_Precio_FLO FLOAT,
+	SG_Moneda_CLO VARCHAR(5),
+
+	SG_Estado_CLO TEXT,
+	SG_Delegacion_CLO TEXT,
+	SG_Colonia_CLO TEXT,
+
+	SG_Nombre_TXT TEXT,
+	SG_Telefono_TXT TEXT,
+
+	SG_Photo_1_URL TEXT,
+	SG_Photo_2_URL TEXT,
+	SG_Photo_3_URL TEXT,
+	SG_Photo_4_URL TEXT,
+	SG_Photo_5_URL TEXT,
+	SG_Photo_6_URL TEXT,
+	SG_Photo_7_URL TEXT,
+	SG_Photo_8_URL TEXT,
+	SG_Photo_9_URL TEXT,
+	SG_Photo_10_URL TEXT
+
+
+) DEFAULT CHARSET=utf8;
