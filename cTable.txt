@@ -1,6 +1,8 @@
 create table segundAmano
 (
 
+	SG_Listing_URL TEXT,
+
 	SG_Poster_CLO TEXT,
 	SG_Tipo_de_inmueble_CLO TEXT,
 

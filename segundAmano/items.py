@@ -4,6 +4,8 @@ import scrapy
 
 class SegundamanoItem(scrapy.Item):
 
+	SG_Listing_URL = scrapy.Field()
+
 	SG_Poster_CLO = scrapy.Field()
 	SG_Tipo_de_inmueble_CLO = scrapy.Field()
 

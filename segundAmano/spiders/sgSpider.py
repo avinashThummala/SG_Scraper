@@ -80,6 +80,8 @@ class SGSpider(scrapy.Spider):
         
 		newItem = SegundamanoItem()
 
+		newItem['SG_Listing_URL'] = response.url
+
 		newItem['SG_Poster_CLO'] = self.extractText( hxs.xpath("//div[@class=\'AdHeaderBar\']/span/text()").extract(), 0)
 		proAdStr='Este anuncio es de un profesional.'		
 
@@ -152,6 +154,8 @@ class SGSpider(scrapy.Spider):
 
         for url in hxs.xpath('//div[@class=\'listing_list_container\']/div/a/@href').extract():
             yield Request(url, callback=self.parseItem)
-                      
+
+        """                      
         if len(nextURL):                
             yield Request(nextURL, callback=self.parse)                                              
+        """            

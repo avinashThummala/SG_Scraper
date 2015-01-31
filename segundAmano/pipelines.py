@@ -26,9 +26,11 @@ class SegundAmanoPipeline(object):
 
 			self.cursor.execute("""INSERT INTO segundAmano VALUES (
 
-				%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s
+				%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s
 				        	
 				)""", (
+
+				newItem['SG_Listing_URL'].encode('utf-8'),
 
 				newItem['SG_Poster_CLO'].encode('utf-8'),
 				newItem['SG_Tipo_de_inmueble_CLO'].encode('utf-8'),
