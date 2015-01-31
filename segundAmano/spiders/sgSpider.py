@@ -154,8 +154,6 @@ class SGSpider(scrapy.Spider):
 
         for url in hxs.xpath('//div[@class=\'listing_list_container\']/div/a/@href').extract():
             yield Request(url, callback=self.parseItem)
-
-        """                      
+                  
         if len(nextURL):                
             yield Request(nextURL, callback=self.parse)                                              
-        """            
