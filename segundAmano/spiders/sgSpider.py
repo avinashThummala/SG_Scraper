@@ -105,7 +105,10 @@ class SGSpider(scrapy.Spider):
 			elif priceStr.startswith("US"):			
 				newItem['SG_Moneda_CLO'] = 'USD'
 
-			newItem['SG_Precio_FLO'] = priceStr
+			if priceStr[-1].isdigit():					
+				newItem['SG_Precio_FLO'] = priceStr
+			else:
+				priceStr = self.extractText( hxs.xpath("//li[@class=\'AdPrice\']/span[1]/text()").extract(), 0).strip()
 
 		self.setParams(hxs, newItem)
 		self.setLocation(hxs, newItem)
