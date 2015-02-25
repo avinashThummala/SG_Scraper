@@ -31,7 +31,7 @@ Finally you need to plug in your database related info in <strong>"segundAmano/p
 Thats it!!
 
 Now simply run:
-<strong>scrapy crawl sgspider > output 2>&1<strong>
+<strong>scrapy crawl sgspider > output 2>&1</strong>
 
 Depending on your bandwidth it will take between 6-10 hours to crawl the entire website.
 
